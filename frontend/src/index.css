@@ -1,0 +1,1029 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+/* card styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  width: 370px;
+  margin: 1rem;
+  border:3px solid black !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: small;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card button {
+  width: 100%;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* about */
+.about-image {
+  margin-top: 20px;
+  max-width: 20%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.about-page {
+  padding: 50px;
+  background-color: #f6e8cb;
+}
+
+.about-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 3rem;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-caption {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.about-description {
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+.about-description p {
+  margin-bottom: 20px;
+}
+
+.features-section {
+  padding: 50px;
+  background-color: rgb(32, 33, 34);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.features-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgba(255, 232, 170, 0.979);
+  margin-bottom: 30px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.feature-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-text {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.feature-text h3 {
+  font-size: 2rem;
+  color: rgb(255, 47, 47);
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #fffefe;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .feature-row {
+    flex-direction: column;
+  }
+
+  .feature-image,
+  .feature-text {
+    max-width: 100%;
+  }
+
+  .feature-text {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-row {
+    flex-direction: column;
+  }
+
+  .feature-row.reverse {
+    flex-direction: column;
+  }
+
+  .feature-image,
+  .feature-text {
+    max-width: 100%;
+  }
+
+  .feature-image {
+    order: -1;
+  }
+
+  .feature-text {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+/* home */
+.home {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.home-header {
+  background-color: #f8f9fa;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+  min-width: 100vw;
+  width: 100vw;
+}
+
+.home-carousel img {
+  height: 620px;
+  object-fit: fill;
+}
+
+.home-carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.explore-button {
+  margin-top: 20px;
+  color: #FFF125;
+}
+
+.home-services,
+.home-testimonials {
+  padding: 50px 0;
+  text-align: center;
+  min-width: 100vw !important;
+}
+
+.home-services h2,
+.home-testimonials h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.home-services p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.home-services .card,
+.home-testimonials .card {
+  margin-bottom: 30px;
+}
+
+.home-testimonials .card-body {
+  font-size: 1.1em;
+}
+
+.additional-services {
+  margin-top: 50px;
+  padding: 0 15px; 
+}
+
+.additional-services .row {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.service-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; 
+  max-width: 275px;
+}
+
+.service-photo {
+  height: 150px; 
+  object-fit: fill;
+  border-radius: 10px;
+  margin-bottom: 10px; 
+}
+
+.service-card h4 {
+  margin-top: 5px;
+  font-size: 1.2em; 
+}
+
+.service-card p {
+  font-size: 0.9em;
+}
+
+
+
+.service-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-icon .icon {
+  font-size: 3em;
+  color: #343a40; 
+  margin-bottom: 10px;
+}
+
+.service-icon h4 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.service-icon p {
+  font-size: 0.9em;
+}
+
+@media (max-width: 1230px) {
+  .home-services .card {
+      margin-bottom: 20px;
+  }
+
+  .home-services .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .home-services .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .home-testimonials .card {
+      margin-bottom: 20px;
+  }
+
+  .home-testimonials .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .home-testimonials .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .additional-services .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px; 
+  }
+
+  .service-card {
+      margin: 10px 0; 
+  }
+}
+
+@media (max-width: 410px) {
+  .home {
+      padding-left: 70px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  .home-services, .home-testimonials {
+      padding-right: 180px;
+  }
+}
+
+@media (min-width: 565px) and (max-width: 765px) {
+  .home-services, .home-testimonials {
+      padding-left: 100px;
+  }
+} 
+
+.home-testimonials {
+  margin-top: -30px;
+}
+
+
+
+
+
+
+.app-top{
+  min-height: 100vh;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.super-sub {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin-top: 50px;
+  /* flex-wrap: nowrap; */
+}
+
+.home-container {
+  width: 100vw;
+  height : 100vh
+}
+
+.home-button {
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: 3px solid black !important;
+}
+
+.home-button:hover {
+  background-color: #cc1234 !important;
+  color: white !important;
+}
+
+.textcolor {
+  color: #FFE4C4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  /* border: 5px solid #EC407A; */
+  /* background-color: rgb(247, 70, 51); */
+  /* color: #3E2723; */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: serif;
+  color: #222222;
+  font-style: italic;
+  /* margin: 6vh; */
+  /* padding: 1vh 5vw; */
+}
+
+.email {
+  border: 3px solid white;
+  padding: 10px 20px;
+}
+
+
+/* .card {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+
+
+
+
+
+/*tour*/
+
+/* .tour-name {
+  color: #CB4335;
+  font-size: 1.8rem;
+  font-weight: bold;
+} */
+
+/* .tour-info {
+  margin: 10px 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #7E5109;
+} */
+
+.tour-image {
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.tour-list {
+  margin-top: 60px !important;
+  text-align: center;
+  margin: 2rem;
+  background-color: rgb(32, 33, 34);
+}
+
+.tour-list-heading {
+  font-size: 2.5rem;
+  font-family:cursive;
+  color: rgb(16, 189, 137);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  /* white-space: nowrap;  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tour-details {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 1rem;
+}
+
+.tour-list-caption {
+  font-size: 1.2rem;
+  font-family: cursive;
+  color: #586b7e;
+  margin-bottom: 60px;
+}
+
+.tour-price {
+  color: #1F618D;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.tour-btn {
+  margin-top: 18px;
+  padding: 10px 80px;
+  border: 1px solid #b4161b;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #D7BDE2;
+}
+
+.detail-color {
+  background-color: #154360;
+}
+
+.detail-title {
+  color: #FFDEAD;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.detail-inpics {
+  background-color: #FFDEAD;
+  color: rgb(19, 139, 139);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.overview {
+  background-color: #d5d4d3;
+  color: rgb(31, 32, 32);
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
+.day-description {
+  color: #fee501;
+}
+
+.color-key {
+  color: #FFA07A
+}
+.color-value {
+  color: #170e08
+}
+.color-plan {
+  color: #fefefe
+}
+
+.carousal-img {
+  height: 500px;
+  width: 85vw;
+}
+
+.about-paragraph {
+  display: flex;
+  align-items: center;
+  /* line-height: 50%; */
+  font-size: 1.2rem;
+}
+
+.about-moto {
+  font-size: 1.5rem;
+}
+
+.about-info {
+  font-size: 1.2rem;
+}
+
+.fontstyle {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.cart-font {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.summary-cart {
+  max-height: 380px;
+}
+
+.dashboard-font {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.h1,.h2{
+  overflow: hidden;
+  height: 60px;
+
+}
+.h5,.h3{
+  overflow: hidden;
+  height: 40px;
+}
+
+.back-color{
+  background-color: #f1f9f9;
+}
+.tcolor{
+  color: #065b65
+}
+.tvcolor{
+  color: #a5b0b0
+}
+
+
+@media(min-width:768px) {
+  .nav-link {
+    /* border: 3px solid white;
+    border-radius: 20px; */
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width:767px) {
+  .email {
+    border: 3px solid white;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    max-width: 70px;
+  }
+/* 
+  .tour-name {
+    font-size: 1rem;
+  } */
+
+  .tour-price {
+    font-size: 0.8rem;
+  }
+
+  /* .tour-info {
+    font-size: 0.6rem;
+  } */
+
+  .tour-btn {
+    padding: 10px 10px;
+    font-size: 10px;
+  }
+
+  .about-paragraph {
+    font-size: 0.8rem;
+  }
+
+  .about-moto {
+    font-size: 1rem;
+  }
+
+  .about-info {
+    font-size: 0.8rem;
+  }
+
+  .cart-font {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width:576px) {
+  .email {
+    width: 140px;
+    word-wrap: break-word;
+  }
+
+  .dashboard-font {
+    font-size: 1rem;
+    width: 100vw;
+    height: 80px
+  }
+}
+
+
+
+
+
+
+
+
+
+/* footer section */
+.layout-footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.layout-footer h2 {
+  margin-bottom: 20px;
+}
+
+.layout-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.layout-footer .social-icons a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  border-radius: 20%;
+}
+
+.layout-footer .social-icons a.twitter {
+  background-color: #1DA1F2;
+}
+
+.layout-footer .social-icons a.instagram {
+  background-color: #E4405F;
+}
+
+.layout-footer .social-icons a.facebook {
+  background-color: #1877F2;
+}
+
+.layout-footer .social-icons a.linkedin {
+  background-color: #0077B5;
+}
+
+.layout-footer .social-icons a.github {
+  background-color: #333;
+}
+
+.layout-footer .social-icons a.google {
+  background-color: #DB4437;
+}
+
+.layout-footer .social-icons a.whatsapp {
+  background-color: #1edaca;
+}
+
+.layout-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.layout-footer .social-icons a.google:hover{
+  background-color: rgba(252, 152, 152, 0.932);
+}
+
+.layout-footer .social-icons a.twitter:hover, 
+ .layout-footer .social-icons a.linkedin:hover{
+  background-color: rgba(150, 200, 247, 0.932);
+ }
+
+ .layout-footer .social-icons a.facebook:hover{
+  background-color: rgba(107, 168, 196, 0.932);
+ }
+
+ .layout-footer .social-icons a.instagram:hover{
+  background-color: rgb(248, 127, 147);
+ }
+
+ .layout-footer .social-icons a.whatsapp:hover{
+  background-color: #a0f0e9;
+ }
+
+ .layout-footer .social-icons a.github:hover{
+  background-color: #5c5a5a;
+ }
+
+
+ .back-to-tours-button{
+  margin-top: 30px;
+  background-color: rgb(83, 130, 218) !important;
+  color: rgb(233, 240, 248) !important;
+ }
+
+ .back-to-tours-button:hover{
+  background-color: rgb(54, 104, 180) !important;
+ }
+
+
+/*register-login-button*/
+.register-login-button{
+  background-color: rgb(7, 160, 7) !important;
+  width:240px;
+  border-radius: 25px !important;
+}
+
+.register-login-button:hover{
+  background-color: rgb(25, 190, 94) !important;
+  width:245px;
+  border-radius: 25px !important;
+}
+
+
+
+
+
+/* cart */
+.remove-from-cart{
+  background-color: rgb(177, 9, 9) !important;
+}
+
+.add-to-cart{
+  background-color: rgb(57, 156, 102) !important;
+  color: rgb(40, 75, 75) !important;
+  font-weight: bold !important;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.remove-from-cart:hover{
+  background-color: rgb(247, 110, 110) !important;
+}
+
+.add-to-cart:hover{
+  background-color: rgb(90, 190, 135) !important;
+  color: rgb(40, 75, 75) !important;
+  font-weight: bold !important;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 450px !important; 
+  object-fit: fill; 
+  /* object-fit: contain;
+  object-fit: cover; */
+}
+
+.tour-overview-heading{
+  margin-top: 30px !important;
+  background-color: rgb(255, 221, 180) !important;
+  color:#333;
+  text-align: center;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides overflow content */
+  text-overflow: ellipsis;
+}
+
+.tour-plans{
+  margin-top: 30px;
+}
+
+.tour-name-heading{
+  margin-top: 30px !important;
+  background-color: rgb(255, 221, 180) !important;
+  color:#333;
+  text-align: center;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides overflow content */
+  text-overflow: ellipsis;
+}
+
+.tour-name{
+  color:rgb(175, 11, 11) !important;
+  margin-top: 20px !important;
+  font-size: larger !important;
+}
+
+.tour-description{
+  color:rgb(250, 114, 121) !important;
+  margin-top: 10px;
+  font-size: medium !important;
+}
+
+.tour-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view-details-button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px; 
+  text-align: center;
+}
+
+.details-top{
+  margin-bottom: 30px !important;
+} 
+
+
+.checkout {
+  background-color: rgb(1, 26, 26) !important;
+  color: rgb(255, 208, 0) !important;
+  font-weight: bold;
+  font-size:medium;
+}
+
+.checkout:hover {
+  background-color: rgb(63, 65, 64) !important;
+  font-weight: bolder !important;
+  font-size: large;
+}
+
+.btn-special{
+  background-color: rgb(177, 9, 9) !important;
+}
+
+.btn-special:hover {
+  background-color: rgb(247, 110, 110) !important;
+  font-size: large;
+}
+
+.checkout,
+.btn-special {
+  font-size: medium;
+  padding: 0.5rem 1rem;
+  width: 160px !important;
+}
+
+.checkout:hover {
+  font-size: large;
+  font-weight: bold !important;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 1rem;
+  gap: 5px;
+}
+
+.empty-cart {
+  background-color: rgb(177, 9, 9) !important;
+  color: rgb(224, 221, 221);
+}
+
+.empty-cart:hover {
+  background-color: rgb(247, 110, 110) !important;
+}
+
+.continue{
+  background-color: rgb(28, 139, 97) !important;
+}
+
+.continue:hover{
+  background-color: rgb(52, 165, 141) !important;
+  border: 1px solid black;
+  color: #ddd;
+}
+
+.buy{
+  background-color: rgb(7,138,88) !important;
+  color: rgb(255, 254, 250) !important;
+}
+
+.buy:hover {
+  background-color: rgb(11,118,95) !important;
+  font-weight: bold !important;
+  font-size: larger;
+}
+/* bora-bora :    https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTPn6hPIY7hNa0Sm2zyEHYkk4-j38aS_b765kvf0TzaapYvivouXox8OEm4QcU-dor5r9GTSkfweCPSEmxbYyVcXM0ld3ulGxJfaD2ipg  */
+/* kyoto-japan: https://travel2next.com/wp-content/uploads/kyoto-temples-at-night.jpg   */
+
+
+@media (max-width: 1200px) and (min-width: 567px) {
+  .card {
+      margin: 0 15px; 
+  }
+} 
+
+.password-input {
+  padding-right: 40px; /* Add space for the icon */
+}
+
+.password-icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* newly added styles for cart person buttons */
+.person-button{
+  border-radius: 5px;
+  width: 40px !important;
+}
+
+.person-button:hover{
+  background-color: #4c4c4c !important;
+}
+
+.person-input-button{
+  border-radius: 10px;
+  width: 60px !important;
+}
+
+
+
