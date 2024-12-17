@@ -1010,6 +1010,10 @@ button {
   z-index: 1;
 }
 
+.add-edit-tour-btn:hover{
+  background-color: #454545 !important;
+}
+
 /* newly added styles for cart person buttons */
 .person-button{
   border-radius: 5px;

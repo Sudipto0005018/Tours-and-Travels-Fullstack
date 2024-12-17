@@ -219,8 +219,8 @@ export const AdminTourAdd = () => {
                             value={tourplan} onChange={handleChange} rows={20} />
                     </div>
 
-                    <button id="btn" className="continue" type="button" style={{fontFamily: "serif"}}
-                        onClick={submithandler}>Add Tour</button>
+                    <button id="btn" className="bg-dark add-edit-tour-btn" type="button" style={{fontFamily: "serif", color: "whitesmoke"}}
+                        onClick={submithandler}>Add</button>
 
                     <button id="btn" className="empty-cart" type="button" style={{fontFamily: "serif"}}
                         onClick={cancelhandler}>Cancel</button>
