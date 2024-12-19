@@ -1031,3 +1031,29 @@ button {
 
 
 
+/* Cart media query */
+@media (max-width: 430px) {
+  .empty-cart-message img {
+      max-width: 100% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .empty-cart-message img {
+      max-width: 100% !important;
+  }
+  .back-to-tours-button {
+      font-size: 14px !important; 
+      padding: 8px 12px !important; 
+  }
+}
+
+
+@media (max-width: 430px) {
+  .empty-order-image img {
+      max-width: 100% !important;
+  }
+  .empty-order-image p {
+      font-size: 18px;
+  }
+}

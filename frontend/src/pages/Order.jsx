@@ -42,7 +42,7 @@ const Order = () => {
                             ))}
                         </section>
                     ) : (
-                        <div>
+                        <div className='empty-order-image'>
                              <img src={emptyOrderImage} alt="Order empty" style={{ maxWidth: '400px', margin: '20px 0' }} /> 
                              <p className="text-center" style={{ fontSize: '22px', marginBottom: '80px' }}>Order List is <strong style={{color: 'red'}}>Empty!</strong></p>
                         </div>
