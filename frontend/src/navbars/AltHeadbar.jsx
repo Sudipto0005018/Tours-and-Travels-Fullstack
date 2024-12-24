@@ -76,7 +76,7 @@ function AltHeadbar({ logoutHandler }) {
               to="/about"
               className={`nav-link text-white ${isActive("/about")}`}
             >
-              About
+              About us
             </Link>
             <Link
               to="/tours"

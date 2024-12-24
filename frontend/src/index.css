@@ -193,11 +193,13 @@
 /* home */
 .home {
   font-family: Arial, sans-serif;
-  margin-top: 20px;
+  background-color: #f6e8cb;
+  /* margin-top: 20px; */
 }
 
 .home-header {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: #f6e8cb;
   color: white;
   text-align: center;
   padding: 60px 0;

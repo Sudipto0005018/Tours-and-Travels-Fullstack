@@ -27,7 +27,7 @@ const Headbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <Link to="/" className={`nav-link ${isActive('/')}`}>Home</Link>
-            <Link to="/about" className={`nav-link ${isActive('/about')}`}>About</Link>
+            <Link to="/about" className={`nav-link ${isActive('/about')}`}>About us</Link>
             <Link to="/tours" className={`nav-link ${isActive('/tours')}`}>Tours</Link>
           </Nav>
           <Nav>
