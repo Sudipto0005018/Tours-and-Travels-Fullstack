@@ -929,8 +929,8 @@ button {
 
 .checkout:hover {
   background-color: rgb(63, 65, 64) !important;
-  font-weight: bolder !important;
-  font-size: large;
+  /* font-weight: bolder !important;
+  font-size: large; */
 }
 
 .btn-special{
@@ -949,10 +949,10 @@ button {
   width: 160px !important;
 }
 
-.checkout:hover {
+/* .checkout:hover {
   font-size: large;
   font-weight: bold !important;
-}
+} */
 
 .button-container {
   display: flex;

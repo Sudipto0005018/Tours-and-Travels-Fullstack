@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Cartitem = ({ item, handleItemDelete, handleTotalCost }) => {
     const navigate = useNavigate();
@@ -71,6 +72,7 @@ const Cartitem = ({ item, handleItemDelete, handleTotalCost }) => {
                 Authorization: `Bearer ${token}`
             }
         })
+        toast.error("Tour removed from Cart!");
         console.log('delete response : ', response);
         handleItemDelete()
     }

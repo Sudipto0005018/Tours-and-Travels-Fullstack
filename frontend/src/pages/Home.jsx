@@ -10,7 +10,7 @@ export const Home = () => {
   }
 
   return (
-    <div className='bg-success position-relative home-container'>
+    <div className='bg-dark position-relative home-container'>
       <img src={germany} className='w-100 h-100' />
       <button className='bg-danger explore-button position-absolute home-button' style={{color: "#FFF125"}} onClick={clickHandler}>Explore Tours</button>
     </div>

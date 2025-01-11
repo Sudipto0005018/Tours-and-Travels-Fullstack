@@ -31,7 +31,7 @@ export const Tours = () => {
       <div className='d-flex flex-wrap justify-content-center cards container mb-4'>
         {
           loading ? (
-            <div className='h3'>Loading...</div> 
+            <div className='h3' style={{color: "whitesmoke"}}>Loading...</div> 
           ) : (
             tours.length > 0 ? (tours.map((tour) => (
               <Tourcard key={tour.id} tour={tour} ></Tourcard>

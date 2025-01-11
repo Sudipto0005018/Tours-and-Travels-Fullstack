@@ -51,12 +51,12 @@ function AltHeadbar({ logoutHandler }) {
       className="navbar navbar-dark fixed-top bg-dark"
     >
       <Container fluid>
-        <Navbar.Brand href="#home" style={{ fontFamily: "serif" }}>
+        <Navbar.Brand href="#home" style={{ fontFamily: "serif", fontSize: "25px" }}>
           <img
             src={logo}
             alt="Logo"
             width="60"
-            height="50"
+            height="40"
             className="d-inline-block align-top"
             style={{ marginRight: "10px" }}
           />
